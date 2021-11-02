@@ -2,7 +2,7 @@
 Transferring a small chunk of data from the Torch model to the cuda memory. Re-initializing elements and returning it back.<br>
 <h3>USAGE<br></h3>
 <h3>
-  0. Prepare libtorch folder<br></h3>
+  1. Prepare libtorch folder<br></h3>
   Download libtorch from: <br>
   https://pytorch.org/get-started/locally/#supported-linux-distributions<br>
    - for CPU libtorch-shared-with-deps-1.9.1+cpu.zip<br>
@@ -18,7 +18,7 @@ Place unzipped files to the path_to_libtorch/libtorch: <br>
        &nbsp;&nbsp;&nbsp  |_build-version<br></pre>
 
   
-<h3>1. Compilation with libtorch library folder. </h3><br>
+<h3>2. Compilation with libtorch library folder. </h3><br>
   From terminal:<br>
   $ sudo cmake -DCMAKE_PREFIX_PATH=/home/path_to_libtorch/libtorch<br>
 terminal logs:<br><i>
@@ -27,7 +27,7 @@ _search_engine_CUDA/torch_cuda/libtorch<br>
 -- Generating done<br>
 -- Build files have been written to:<br>
   </i>
-<h3>2. Build release file:<br></h3>
+<h3>3. Build release file:<br></h3>
   $ sudo cmake --build . --config Release <br>
 terminal logs:<br>
 <i>
